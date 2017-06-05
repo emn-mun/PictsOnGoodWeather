@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppThemeNoTitle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SplashedBackground">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+
+    <style name="BasePosition">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="LogoTitle" parent="BasePosition">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/common_signin_btn_text_light</item>
+    </style>
+    <style name="LogoSubtitle" parent="BasePosition">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/common_signin_btn_text_light</item>
+    </style>
+
+    <style name="BlackButton" parent="BasePosition">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">#232323</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

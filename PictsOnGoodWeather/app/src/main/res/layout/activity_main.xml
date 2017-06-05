@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/SplashedBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/logo"
+        >
+        <TextView
+            style="@style/LogoTitle"
+            android:text="@string/logo_title"
+            />
+        <TextView
+            style="@style/LogoSubtitle"
+            android:text="@string/logo_slogan"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/taken_picture_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        style="@style/BlackButton"
+        android:id="@+id/take_picture_button"
+        android:layout_alignParentBottom="true"
+        android:text="@string/take_photo"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="60dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.emanuelmunteanu.mobi1_handin_4.MapActivity">
+
+    <fragment
+        android:id="@+id/gmap"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map_weather_label"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Weather for:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map_weather_temp_desc"
+            android:layout_below="@+id/map_weather_label"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="temperature and description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map_weather_wind_press"
+            android:layout_below="@+id/map_weather_temp_desc"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="wind pressure"/>
+
+        <Button
+            style="@style/BlackButton"
+            android:id="@+id/cameraButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/camera" />
+    </RelativeLayout>
+
+</LinearLayout>
